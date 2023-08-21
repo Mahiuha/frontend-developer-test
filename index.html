@@ -7,6 +7,7 @@
         <meta description="Implement a figma design" />
         <title>Frontend Developer Test</title>
         <link rel="shortcut icon" href="images/logo-blue.svg" type="image/x-icon" />
+        <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -17,36 +18,77 @@
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <!-- TailwindCSS -->
         <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Fontawesome -->
         <script
           src="https://kit.fontawesome.com/9b597d4a7c.js"
           crossorigin="anonymous"
         ></script>
+        <!-- Scripts -->
         <script src="js/tailwind.config.js" async></script>
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <!-- Header section -->
         <header>
-          <figure>
-            <img src="images/logo-blue.svg" alt="Logo" />
-          </figure>
-          <nav>
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem</li>
-            </ul>
+          <nav class="flex items-center justify-between p-8 lg:w-[80%] mx-auto">
+            <!-- Brand logo -->
+            <figure>
+              <a href="/"
+                ><img
+                  class="h-20 border-2 border-figmaorange"
+                  src="images/logo-blue.svg"
+                  alt="Logo company"
+              /></a>
+            </figure>
+            <!-- Navigation -->
+            <div
+              class="navigation absolute bg-white md:static md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full duration-500 border-solid border-2 border-figmaorange"
+            >
+              <ul
+                class="flex uppercase font-['montserrat'] font-semibold md:flex-row flex-col"
+              >
+                <li class="p-3 text-sm text-center">
+                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+                </li>
+                <li class="p-3 text-sm text-center">
+                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+                </li>
+                <li class="p-3 text-sm text-center">
+                  <a href="#" class="hover:text-figmablue">Lorem</a>
+                </li>
+                <li class="p-3 text-sm text-center">
+                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+                </li>
+                <li class="p-3 text-sm text-center">
+                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+                </li>
+                <li class="p-3 text-sm text-center">
+                  <a href="#" class="hover:text-figmablue">Lorem</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Social icons -->
+            <div
+              class="social-icons border-2 border-figmaorange flex items-center gap-4"
+            >
+              <a href="">
+                <i class="fa-brands fa-linkedin-in fa-2xl text-figmablue"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-square-facebook fa-2xl text-figmablue"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-instagram fa-2xl text-figmablue"></i
+              ></a>
+              <i
+                onclick="toggleMenu(this)"
+                class="fa-solid fa-bars fa-2xl cursor-pointer md:hidden"
+                id="menu"
+              ></i>
+            </div>
           </nav>
-          <div class="social-icons">
-            <a href=""><i class="fa-brands fa-linkedin-in text-figmablue"></i></a>
-            <a href=""
-              ><i class="fa-brands fa-square-facebook text-figmablue"></i
-            ></a>
-            <a href=""><i class="fa-brands fa-instagram text-figmablue"></i></a>
-          </div>
         </header>
         <!-- Main section -->
         <main>
@@ -129,17 +171,17 @@
           <!-- Statistics-->
           <article class="bg-figmablue text-white">
             <section>
-              <i></i>
+              <i class="fa-solid fa-chart-simple"></i>
               <p>2.620</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
             <section>
-              <i></i>
+              <i class="fa-solid fa-chart-pie"></i>
               <p>132.620</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
             <section>
-              <i></i>
+              <i class="fa-regular fa-lightbulb"></i>
               <p>13.654</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
