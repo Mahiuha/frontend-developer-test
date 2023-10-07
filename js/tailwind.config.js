@@ -1,4 +1,4 @@
-/**
+ /**
  * * Tailwind Utilities classes
  * items-center: to align items along the center of the containers cross axis
  * justify-around: to justify items along the cointainers main axis, equal amound of space each side
