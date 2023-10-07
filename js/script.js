@@ -1,3 +1,4 @@
+// Script file for the website
 const navigation = document.querySelector(".navigation");
 
 function toggleMenu(event) {
