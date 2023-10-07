@@ -1,330 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta content="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta description="Implement a figma design" />
-        <title>Frontend Developer Test</title>
-        <link rel="shortcut icon" href="images/logo-blue.svg" type="image/x-icon" />
-        <link
-          rel="shortcut icon"
-          href="images/brand-logo-blue.svg"
-          type="image/x-icon"
-        />
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-        <!-- TailwindCSS -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- Fontawesome -->
-        <script
-          src="https://kit.fontawesome.com/9b597d4a7c.js"
-          crossorigin="anonymous"
-        ></script>
-        <!-- Scripts -->
-        <script src="js/tailwind.config.js" async></script>
-        <script src="js/script.js" defer></script>
-    </head>
-    <body class="font-['montserrat']">
-        <!-- Header section -->
-        <header>
-          <nav class="flex items-center lg:justify-around justify-between p-4 mx-auto">
-            <!-- Brand logo -->
-            <figure>
-              <a href="/">
-                <img
-                  class="p-1 h-24 w-28"
-                  src="images/brand-logo-blue.svg"
-                  alt="Logo company"
-                  />
-                </a>
-            </figure>
-            <!-- Navigation -->
-            <div class="navigation absolute md:static md:min-h-fit left-0 top-[-100%] md:w-auto w-full bg-white duration-500">
-              <ul class="flex uppercase font-semibold md:flex-row flex-col">
-                <li class="p-3 text-sm text-center">
-                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
-                </li>
-                <li class="p-3 text-sm text-center">
-                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
-                </li>
-                <li class="p-3 text-sm text-center">
-                  <a href="#" class="hover:text-figmablue">Lorem</a>
-                </li>
-                <li class="p-3 text-sm text-center">
-                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
-                </li>
-                <li class="p-3 text-sm text-center">
-                  <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
-                </li>
-                <li class="p-3 text-sm text-center">
-                  <a href="#" class="hover:text-figmablue">Lorem</a>
-                </li>
-              </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="Implement a figma design" />
+    <title>Frontend developer test</title>
+    <link
+      rel="shortcut icon"
+      href="images/brand-logo-blue.svg"
+      type="image/x-icon"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9b597d4a7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scripts -->
+    <script src="js/tailwind.config.js" async></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="font-['montserrat']">
+    <!-- Header section -->
+    <header>
+      <nav
+        class="flex items-center lg:justify-around justify-between p-4 mx-auto"
+      >
+        <!-- Brand logo -->
+        <figure>
+          <a href="/"
+            ><img
+              class="p-1 h-24 w-28"
+              src="images/brand-logo-blue.svg"
+              alt="Logo company"
+          /></a>
+        </figure>
+        <!-- Navigation -->
+        <div
+          class="navigation absolute md:static md:min-h-fit left-0 top-[-100%] md:w-auto w-full bg-white duration-500"
+        >
+          <!-- Social icons -->
+          <div class="flex md:justify-end justify-center gap-4 p-2">
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in fa-xl text-blue-700"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-square-facebook fa-xl text-blue-700"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-instagram fa-xl text-blue-700"></i
+            ></a>
+          </div>
+          <!-- links -->
+          <ul
+            class="flex md:flex-row flex-col uppercase font-semibold text-sm text-center"
+          >
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+            </li>
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+            </li>
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem</a>
+            </li>
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+            </li>
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+            </li>
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem</a>
+            </li>
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem ipsum</a>
+            </li>
+            <li class="p-3">
+              <a href="#" class="hover:text-figmablue">Lorem</a>
+            </li>
+          </ul>
+        </div>
+        <i
+          onclick="toggleMenu(this)"
+          class="fa-solid fa-bars fa-xl cursor-pointer md:hidden"
+          id="menu"
+        ></i>
+      </nav>
+    </header>
+    <!-- Main section -->
+    <main>
+      <!-- Hero -->
+      <article class="flex md:flex-row md:justify-center flex-col">
+        <section
+          class="flex flex-col md:flex-initial md:w-2/3 bg-cover bg-center bg-[url('images/working.png')] text-white font-['poppins']"
+        >
+          <div class="lg:p-32 p-10 mx-auto my-auto">
+            <h1 class="mb-6 text-left font-bold text-5xl uppercase">
+              Title goes here
+            </h1>
+            <h2 class="mb-6 font-semibold text-2xl uppercase">
+              Subhead goes here
+            </h2>
+            <p class="font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh diam
+              massa aenean tortor euismod auctor faucibus eget eget. Amet
+              consequat pharetra feugiat egestas pellentesque iaculis. Lorem
+              nunc phasellus tellus mattis. Risus duis et non ac gravida amet
+              adipiscing.
+            </p>
+          </div>
+        </section>
+        <section class="md:flex-initial md:w-1/3 p-10 lg:mr-10">
+          <h3
+            class="mb-2 font-['poppins'] text-2xl uppercase text-figmaorange font-semibold"
+          >
+            Lorem ipsum dolor sit
+          </h3>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <form action="">
+            <input
+              class="w-full py-2 px-4 mb-4 border rounded"
+              type="text"
+              name=""
+              id=""
+              placeholder="Placeholder *"
+            />
+            <input
+              class="w-full py-2 px-4 mb-4 border rounded"
+              type="text"
+              name=""
+              id=""
+              placeholder="Placeholder *"
+            />
+            <input
+              class="w-full py-2 px-4 mb-4 border rounded"
+              type="date"
+              name=""
+              id=""
+              placeholder="DD/MM/YYYY"
+            />
+            <textarea
+              class="w-full py-2 px-4 mb-4 border rounded"
+              name=""
+              id=""
+              cols="30"
+              rows="4"
+              placeholder="Placeholder *"
+            ></textarea>
+            <div class="flex mb-4">
+              <input class="mr-2" type="checkbox" name="" id="" />
+              <span
+                >Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span
+              >
             </div>
-            <!-- Social icons -->
-            <div class="social-icons border-2 border-figmaorange flex items-center gap-4 p-2">
-              <a href="">
-                <i class="fa-brands fa-linkedin-in fa-xl text-blue-700"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-square-facebook fa-xl text-blue-700"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-instagram fa-xl text-blue-700"></i>
-              </a>
-              <i
-                onclick="toggleMenu(this)"
-                class="fa-solid fa-bars fa-xl cursor-pointer md:hidden"
-                id="menu"
-              ></i>
-            </div>
-          </nav>
-        </header>
-        <!-- Main section -->
-        <main class="">
-          <!-- Hero -->
-          <article>
-            <section class="bg-cover bg-center bg-[url('/images/working.png')] text-white flex flex-col md:p-32 font-['poppins']">
-              <div class="p-20">
-                <h1 class="font-bold text-5xl uppercase pb-6 text-left">
-                  Title goes here
-                </h1>
-                <h2 class="font-semibold text-2xl uppercase pb-6">
-                  Subhead goes here
-                </h2>
-                <p class="font-light">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laboriosam explicabo architecto dolorem amet ipsum similique
-                  officia veritatis atque sapiente eligendi? Rerum unde laboriosam
-                  autem ullam inventore animi dicta ratione veritatis?
-                </p>
-              </div>
-            </section>
-            <section class="p-10">
-              <img src="images/working-group.jpg" alt="" />
-              <h3 class="font-['poppins'] text-2xl uppercase text-figmaorange font-semibold">Lorem ipsum dolor sit</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <form action="">
-                <input
-                  class="border rounded w-full py-2 px-4 mb-4"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="test"
-                />
-                <input
-                  class="border rounded w-full py-2 px-4 mb-4"
-                  type="text"
-                  name=""
-                  id=""
-                />
-                <input
-                  class="border rounded w-full py-2 px-4 mb-4"
-                  type="date"
-                  name=""
-                  id=""
-                />
-                <textarea
-                  class="border rounded w-full py-2 px-4 mb-4"
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="4"
-                ></textarea>
-                <div class="flex mb-4">
-                  <input class="mr-2" type="checkbox" name="" id="" />
-                  <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-                </div>
-                <button
-                  class="rounded-full bg-figmaorange border-2 border-figmaorange uppercase py-1.5 px-12 text-white hover:bg-transparent hover:text-figmaorange duration-500"
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </form>
-            </section>
-          </article>
-          <!-- Section 1-->
-          <article class="bg-cover bg-center bg-[url('/images/bg-home-boxes.png')] py-16 px-5 flex justify-center flex-wrap">
-            <section class="m-4 border-2 border-figmaorange">
-              <h2 class="font-['poppins'] text-figmaorange text-3xl uppercase font-semibold mb-3">Lorem ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                aspernatur consequatur odit nemo cum quas tempore enim corporis.
-                Atque, facere mollitia hic exercitationem saepe veniam sequi odio
-                doloribus quidem adipisci?
-              </p>
-            </section>
-            <section class="m-4">
-              <img
-                class="w-128 h-128 rounded-md"
-                src="images/working-woman.png"
-                alt="Working woman at the office"
-              />
-            </section>
-          </article>
-          <!-- Section 2-->
-          <article class="bg-cover bg-center bg-[url('/images/background-blue.png')] text-white py-16 px-5 flex justify-center flex-wrap">
-            <section class="column-2 w-max-128 m-4 border-2 border-figmaorange">
-              <video
+            <button
+              class="py-1.5 px-12 rounded-full bg-figmaorange border-2 border-figmaorange uppercase text-white hover:bg-transparent hover:text-figmaorange duration-500"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+      </article>
+      <!-- Section 1-->
+      <article
+        class="flex md:flex-row md:justify-center gap-10 flex-col items-center py-16 px-5 bg-cover bg-center bg-[url('images/bg-home-boxes.png')]"
+      >
+        <section class="md:flex-initial md:w-1/3 m-4">
+          <h2
+            class="mb-3 font-['poppins'] text-figmaorange text-3xl uppercase font-semibold"
+          >
+            Lorem ipsum
+          </h2>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ornare
+            sed adipiscing ac sagittis egestas. Risus dolor, senectus mauris
+            tincidunt platea. Tempus viverra amet lacinia velit condimentum sed
+            sollicitudin netus eu. Libero, in commodo quis vel ullamcorper
+            interdum a integer rhoncus. Imperdiet commodo dignissim velit
+            interdum quis.
+          </p>
+        </section>
+        <section class="m-4 md:flex-initial md:w-1/3">
+          <img
+            class="rounded-md"
+            src="images/working-woman.png"
+            alt="Working woman at the office"
+          />
+        </section>
+      </article>
+      <!-- Section 2-->
+      <article
+        class="bg-cover bg-center bg-[url('images/background-blue.png')] text-white py-16 px-5 flex md:flex-row md:justify-center gap-10 flex-col items-center md:max-h-[500px]"
+      >
+        <section class="column-2 m-4 md:flex-initial md:w-1/3 lg:relative">
+          <div class="lg:w-[480px] lg:h-[480px]"></div>
+          <div class="lg:absolute lg:left-2 lg:-bottom-10">
+            <video
               controls
               width="480"
-              height="400"
+              height="480"
               poster="images/modern.png"
               src="images/building-exterior.mp4"
               type="video/mp4"
-              ></video>
-            </section>
-            <section class="m-4 border-2 border-figmaorange">
-              <h2 class="font-['poppins'] text-3xl uppercase font-semibold mb-3">Lorem ipsum</h2>
-              <p class="mb-4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-                blanditiis tempore harum vel labore necessitatibus alias sit est!
-                Culpa nulla quae accusantium pariatur! Assumenda, quaerat
-                asperiores. Maxime ut libero aspernatur!
+            ></video>
+          </div>
+        </section>
+        <section class="m-4 md:flex-initial md:w-1/3">
+          <h2 class="font-['poppins'] text-3xl uppercase font-semibold mb-3">
+            Lorem ipsum
+          </h2>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ornare
+            sed adipiscing ac sagittis egestas. Risus dolor, senectus mauris
+            tincidunt platea. Tempus viverra amet lacinia velit condimentum sed
+            sollicitudin netus eu. Libero, in commodo quis vel ullamcorper
+            interdum a integer rhoncus. Imperdiet commodo dignissim velit
+            interdum quis.
+          </p>
+          <button
+            class="rounded-full bg-figmaorange border-2 border-figmaorange uppercase py-1.5 px-12 text-white hover:bg-transparent hover:text-figmaorange duration-500"
+            type="submit"
+          >
+            Submit
+          </button>
+        </section>
+      </article>
+      <!-- Section 3-->
+      <article
+        class="bg-cover bg-center bg-[url('images/background-light-gray.png')] py-16 px-5 flex md:flex-row md:justify-center gap-10 flex-col items-center"
+      >
+        <section class="m-4 md:flex-initial md:w-1/3">
+          <h2
+            class="font-[poppins] text-figmaorange text-3xl uppercase font-semibold mb-4"
+          >
+            Lorem ipsum
+          </h2>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ornare
+            sed adipiscing ac sagittis egestas. Risus dolor, senectus mauris
+            tincidunt platea. Tempus viverra amet lacinia velit condimentum sed
+            sollicitudin netus eu. Libero, in commodo quis vel ullamcorper
+            interdum a integer rhoncus. Imperdiet commodo dignissim velit
+            interdum quis.
+          </p>
+        </section>
+        <section class="m-4 md:flex-initial md:w-1/3">
+          <img
+            class="w-128 h-128 rounded-md mx-auto"
+            src="images/laptop.png"
+            alt="Typing in laptop"
+          />
+        </section>
+      </article>
+      <!-- Statistics-->
+      <article
+        class="bg-figmablue text-white py-16 px-5 flex justify-center flex-wrap"
+      >
+        <section
+          class="border border-figmablack rounded-md text-center p-10 m-4 w-80"
+        >
+          <i class="fa-solid fa-chart-simple fa-5x mb-4"></i>
+          <p class="pb-4 text-5xl font-['poppins'] text-5xl font-semibold">
+            2.620
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <section class="text-center p-10 m-4 w-80">
+          <i class="fa-solid fa-chart-pie fa-5x mb-4"></i>
+          <p class="pb-4 font-['poppins'] text-5xl font-semibold">132.620</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <section class="text-center p-10 m-4 w-80">
+          <i class="fa-regular fa-lightbulb fa-5x mb-4"></i>
+          <p class="pb-4 font-['poppins'] text-5xl font-semibold">13.654</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+      </article>
+      <!-- Cards -->
+      <article
+        class="bg-cover bg-center bg-[url('images/background-gray.png')] py-16 px-5 flex md:flex-row md:justify-center gap-20 flex-col items-center"
+      >
+        <section class="m-5">
+          <figure class="w-[320px] mx-auto">
+            <img src="images/working-group.png" alt="Job related" />
+            <div class="bg-white py-10 px-5">
+              <h5 class="font-[poppins] font-semibold text-2xl uppercase mb-3">
+                Here a card title
+              </h5>
+              <p class="mb-3 text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                eligendi similique dolorem natus libero tempore quaerat,
+                voluptatibus itaque rem, earum nesciunt ad quod sed! Sapiente
+                quisquam dolorem quaerat porro nulla.
               </p>
-              <button class="rounded-full bg-figmaorange border-2 border-figmaorange uppercase py-1.5 px-12 text-white hover:bg-transparent hover:text-figmaorange duration-500" type="submit">Submit</button>
-            </section>
-          </article>
-          <!-- Section 3-->
-          <article class="bg-cover bg-center bg-[url('/images/background-light-gray.png')] py-16 px-5 flex justify-center flex-wrap">
-            <section class="m-4 border-2 border-figmaorange">
-              <h2 class="font-[poppins] text-figmaorange text-3xl uppercase font-semibold mb-4">Lorem ipsum</h2>
-              <p class="mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-                numquam, explicabo soluta, asperiores placeat magnam quaerat
-                incidunt minus saepe fugit quos iste, quas temporibus esse
-                cupiditate. Voluptatibus sint enim animi!
-              </p>
-            </section>
-            <section class="m-4">
-              <img
-                class="w-128 h-128 rounded-md"
-                src="images/laptop.png"
-                alt="Typing in laptop"
-              />
-            </section>
-          </article>
-          <!-- Statistics-->
-          <article class="bg-figmablue text-white py-16 px-5 flex justify-center flex-wrap">
-            <section class="border border-figmablack rounded-md text-center p-10 m-4">
-              <i class="fa-solid fa-chart-simple fa-5x mb-4"></i>
-              <p class="pb-4 text-5xl font-['poppins'] text-5xl font-semibold">2.620</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </section>
-            <section class="border-2 border-figmaorange text-center p-10 m-4">
-              <i class="fa-solid fa-chart-pie fa-5x mb-4"></i>
-              <p class="pb-4 font-['poppins'] text-5xl font-semibold">132.620</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </section>
-            <section class="border-2 border-figmaorange text-center p-10 m-4">
-              <i class="fa-regular fa-lightbulb fa-5x mb-4"></i>
-              <p class="pb-4 font-['poppins'] text-5xl font-semibold">13.654</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </section>
-          </article>
-          <!-- Cards -->
-          <article class="bg-cover bg-center bg-[url('/images/background-gray.png')] py-16 px-5">
-            <section class="m-5">
-              <figure class="w-[368px] mx-auto">
-                <img src="images/city.jpg" alt="Job related" />
-                <div class="bg-white py-10 px-5">
-                  <h5 class="font-[poppins] font-semibold text-2xl uppercase mb-3">
-                    Here a card title
-                  </h5>
-                  <p class="mb-3 text-xs">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                    eligendi similique dolorem natus libero tempore quaerat,
-                    voluptatibus itaque rem, earum nesciunt ad quod sed! Sapiente
-                    quisquam dolorem quaerat porro nulla.
-                  </p>
-                  <button
-                    class="rounded-full bg-figmaorange border-2 border-figmaorange uppercase py-1.5 px-12 text-white hover:bg-transparent hover:text-figmaorange duration-500"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </figure>
-            </section>
-            <section class="bg-cover bg-center bg-[url('/images/green.jpg')] m-5 text-white pt-64 px-8 pb-8">
-              <p class="font-['poppins'] pb-8 text-3xl uppercase font-semibold">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <button class="rounded-md bg-figmateal py-2 px-4 text-white font-light text-sm hover:bg-sky-700 duration-500" type="submit">
-                Button
+              <button
+                class="rounded-full bg-figmaorange border-2 border-figmaorange uppercase py-1.5 px-12 text-white hover:bg-transparent hover:text-figmaorange duration-500"
+                type="submit"
+              >
+                Submit
               </button>
-            </section>
-          </article>
-        </main>
-        <!-- Footer section -->
-        <footer class="bg-figmablue text-white">
-          <div class="flex items-top justify-center lg:justify-between p-8 lg:w-[80%] mx-auto flex-wrap">
-            <figure class="md:w-64 border-2 border-figmaorange">
-              <img
-                class="h-24"
-                src="images/brand-logo-white.svg"
-                alt="brand logo white"
-              />
-              <p class="text-xs py-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
-                temporibus tempora autem mollitia laudantium veniam corrupti quae
-                tempore quam dolorem at omnis explicabo dolore consequatur error ex
-                neque, vero magni.
-              </p>
-            </figure>
-            <div class="border-2 border-figmaorange uppercase font-semibold text-xs w-auto p-5">
-              <ul>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-              </ul>
             </div>
-            <div class="border-2 border-figmaorange uppercase font-semibold text-xs w-auto p-5">
-              <ul>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-                <li class="pb-3">
-                  <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
-                </li>
-              </ul>
-            </div>
-            <div class="social-icons border-2 border-figmaorange items-center flex gap-7 w-auto p-5">
-              <a href=""> <i class="fa-brands fa-linkedin-in fa-lg"></i></a>
-              <a href=""><i class="fa-brands fa-square-facebook fa-lg"></i></a>
-              <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
-            </div>
-          </div>
-          <div class="flex justify-center gap-8 p-2.5 uppercase text-xs font-semibold bg-figmagray">
-            <p>Legal & policy</p>
-            <p>Copyright</p>
-          </div>
-        </footer>
-    </body>
+          </figure>
+        </section>
+        <section
+          class="bg-cover bg-center bg-[url('images/green.jpg')] m-5 text-white pt-64 px-8 pb-8 w-[460px]"
+        >
+          <p class="font-['poppins'] pb-8 text-3xl uppercase font-semibold">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <button
+            class="rounded-md bg-figmateal py-2 px-4 text-white font-light text-sm hover:bg-sky-700 duration-500"
+            type="submit"
+          >
+            Button
+          </button>
+        </section>
+      </article>
+    </main>
+    <!-- Footer section -->
+    <footer class="bg-figmablue text-white">
+      <div
+        class="flex items-top justify-center lg:justify-between p-8 lg:w-[80%] mx-auto flex-wrap"
+      >
+        <figure class="md:w-60">
+          <img
+            class="h-24"
+            src="images/brand-logo-white.svg"
+            alt="brand logo white"
+          />
+          <p class="text-xs py-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh diam
+            massa aenean tortor euismod auctor faucibus eget eget.
+          </p>
+        </figure>
+        <div class="uppercase font-semibold text-xs w-auto p-5">
+          <ul>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+          </ul>
+        </div>
+        <div class="uppercase font-semibold text-xs w-auto p-5">
+          <ul>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+            <li class="pb-3">
+              <a href="#" class="hover:text-figmastone">Lorem ipsum</a>
+            </li>
+          </ul>
+        </div>
+        <div class="items-center flex gap-7 w-auto p-5">
+          <a href="#"> <i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+      <div
+        class="flex justify-center gap-8 p-2.5 uppercase text-xs font-semibold bg-figmagray"
+      >
+        <p>Legal & policy</p>
+        <p>Copyright</p>
+      </div>
+    </footer>
+  </body>
 </html>
